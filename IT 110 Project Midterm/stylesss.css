@@ -1,0 +1,290 @@
+/* For Headerbar */
+body {
+    padding-top: 0px; /* Adjust based on the height of your navbar */
+}
+.header{
+
+    background-color:rgb(27, 9, 77);
+    color: white;
+    text-align: left;
+    padding: 20px;
+    top:-100px;
+    
+}
+
+  .credits{
+    background-color:red;
+    color: white;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    height: 70px;
+    padding:-250px;
+    display: flex;
+    align-items: relative;
+    }
+
+    /* For Main Body Content */
+
+.content{
+   
+    z-index: 1; /* Set a negative z-index to place the content behind other elements */
+    margin-top: 70px;
+    font-family: URW Gothic L, sans-serif;
+    font-size: 50px; 
+    font-weight: bold;
+    color:rgb(3, 3, 3);
+    margin: 0; 
+    position:absolute;
+    top:200px;
+    height: 0%; 
+    right:0%;
+    left:15%;  
+    animation: swipeIn 3s ease-in-out;
+  }
+  @keyframes swipeIn {
+              from {
+                 opacity:0;
+                  transform: translateX(-100%);
+              }
+              to {
+                   opacity:1;
+                  transform: translateX(0);
+              }
+          }
+
+
+/*For Menu Sidebar */
+
+
+.menu-icon {
+    background-color: rgb(3, 3, 3);
+    color: rgb(253, 252, 252);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 24px;
+    position:absolute;
+    z-index: 2; /* Place menu drawer above content bar */
+}
+ #menu-toggle:checked~.sidebar {
+    width: 250px;
+    
+}
+ .sidebar {
+            background-color: rgb(70, 9, 105);
+            color: #fff;
+            padding: 0px;
+            box-sizing: border-box;    
+            transition: width 0.3s;
+            border: 0px solid #ccc;
+            top: 310px; 
+            left: 0; 
+            width: 0;
+            max-height: 450px;  
+            overflow-y: auto;
+            float:left;
+            position:absolute;
+            z-index: 2;           
+}
+.sidebar-show {
+    left: 0;
+}
+        .sidebar-link {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 12px 0;
+        } 
+        .sidebar-link:hover {
+            background-color:rgb(54, 207, 245);
+            text-decoration: none;
+            color: black;
+        }
+        .horizontal-section {
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin-bottom: 20px;
+            justify-content: center;
+          }         
+          .sectionalizer {
+            background-image: url("https://businessfirstfamily.com/wp-content/uploads/2015/09/corporate-office-interior-design.jpg");
+            height: 700px;
+          }
+         
+        /*for Image Slider Section*/
+
+        .sectional {
+            background-color:rgb(45, 211, 211);         
+        }
+          .carousel-inner {
+            height: 500px; /* Set the desired height */
+        }        
+        /* Ensure images inside the slider fill the container and maintain aspect ratio */
+
+        .carousel-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensure the image covers the entire container */            
+        }
+          .slider-label1 {
+            position: absolute; /* Position the label relative to the slider item */
+            top: 0px; /* Adjust top position as needed */
+            left: 0px; /* Adjust left position as needed */
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background color */
+            color: white; /* Text color */
+            padding: 5px 10px; /* Padding for the label */
+           }
+        .slider-label2 {
+            position: absolute; /* Position the label relative to the slider item */
+            top: 0px; /* Adjust top position as needed */
+            left:0px; /* Adjust left position as needed */
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background color */
+            color: white; /* Text color */
+            padding: 5px 10px; /* Padding for the label */
+            }
+        .slider-label3 {
+            position: absolute; /* Position the label relative to the slider item */
+            top: 0px; /* Adjust top position as needed */
+            left: 0px; /* Adjust left position as needed */
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background color */
+            color: white; /* Text color */
+            padding: 5px 10px; /* Padding for the label */          
+        }
+        .slider-label4 {
+            position: absolute; /* Position the label relative to the slider item */
+            top: 0px; /* Adjust top position as needed */
+            left: 0px; /* Adjust left position as needed */
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background color */
+            color: white; /* Text color */
+            padding: 5px 10px; /* Padding for the label */       
+        }
+        .carousel-item:hover img {
+            transform: scale(1.1); /* Scale up the image on hover */
+        }        
+        .carousel-item:hover .overlay {
+            opacity: 1; /* Show overlay on hover */
+        }      
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+            transition: opacity 0.3s ease-in; /* Add smooth transition effect */
+        }
+        .overlay-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff; /* Text color */
+            text-align: center;
+        }
+
+        /*for registration*/
+
+        .form-group-login{
+            padding: 5px;
+            width: 100%;
+            position: relative;
+        }
+        .loginform{
+            box-sizing: border-box;
+            background-color: rgb(28, 172, 230);
+            width: 50%;
+            position: relative;
+            justify-items: center;
+            border-radius: 10px;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        .form-group-signup{
+            padding: 5px;
+            width: 100%;
+            position: relative;
+        }
+        .signupform{
+            box-sizing: border-box;
+            background-color: rgb(28, 172, 230);
+            width: 50%;
+            position: relative;
+            justify-items: center;
+            border-radius: 10px;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        .sectionalreg{
+            background-color: rgb(116, 235, 18);
+        }
+        .sectionalreg h1{
+            text-align: center;
+        }
+        .segment h3{
+            text-align: center;
+        }
+
+        /*for Map*/
+        .map {
+            width: 100%; /* Adjust width as needed */
+            
+            background-color: rgb(194, 16, 120);
+            color: #fff;
+           
+        }
+        .map h1{
+            text-align: center;
+            margin-left: 0% ;
+            margin-top: 30px;
+           
+        }
+        #map {
+            height: 400px; /* Set initial height */
+            width: 70%;
+            margin-top: 20px;
+            justify-items: left;
+            margin-left: 15% ;
+        }
+
+        .right{
+ 
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 60px;
+            box-sizing: border-box;
+            background-color: #1de7e7;
+            padding: 40px;
+            color: black;
+           
+        }
+        .right h1{
+            text-align: center;
+            margin-left: 0%;
+           
+        }
+
+        
+/* For Footer */
+
+          .footer{
+            background-color: rgb(49, 12, 97);
+            color: white;
+            text-align: center;
+            padding: 40px;
+            width: 100%;
+            position: relative;
+        }
+        
+
+        
+@media only screen and (max-width: 768px) {
+    [class*="col-"] {
+        width: 100%; /* Adjust the maximum width for smaller screens */
+    }
+}
